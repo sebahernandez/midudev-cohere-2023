@@ -1,0 +1,30 @@
+---
+import ButtonSubmit from "../components/ButtonSubmit.svelte";
+import Layout from "../layouts/Layout.astro";
+import Texarea from "../components/Texarea.svelte";
+---
+
+<Layout title="Cooking Idea ">
+  <main class="flex h-screen justify-center items-center flex-col">
+    <header class="mt-10 mb-5">
+      <h1 class="text-center">COOKING IA</h1>
+	  <p class="text-center">
+		Many times we get home and we don't know what we can cook, look for an ingredient,
+     <p class="text-center">fruits or vegetables and ask what you can do with it.</p>
+	  </p>
+    </header>
+    <div class="flex flex-col gap-y-1">
+      <Texarea client:visible />
+      <ButtonSubmit client:visible/>
+    </div>
+  </main>
+</Layout>
+
+<style>
+
+ h1{
+  font-family: 'Knewave', cursive;
+  font-size: 4rem;
+  color:#3e3772;
+ }
+</style>
