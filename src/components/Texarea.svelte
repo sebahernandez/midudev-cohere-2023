@@ -24,3 +24,10 @@
   rows="10"
   cols="40"
 />
+
+<style>
+  textarea {
+    background-color: #ffffffb5;
+    border: none;
+}
+</style>
