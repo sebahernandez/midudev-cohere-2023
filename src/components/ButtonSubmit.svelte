@@ -46,8 +46,8 @@
   {/await}
 {/if}
 
-{#if !$isValidInput}
-  <strong class="text-slate-900"
+{#if $isValidInput}
+  <strong class="text-slate-900" 
     >You are not using English or the text is too short!</strong
   >
 {/if}

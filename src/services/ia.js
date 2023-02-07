@@ -26,7 +26,7 @@ export async function checkIsLenguaje(input) {
 export  async function getAnswer(input) {
   const data = {
     model: 'command-xlarge-20221108',
-    prompt: `generates a meal idea with the ingredient ${input}`,
+    prompt: `generates a meal idea with two ingredients that are ${input}`,
     max_tokens: 300,
     temperature: 0.9,
     k: 0,
