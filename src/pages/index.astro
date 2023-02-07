@@ -2,6 +2,8 @@
 import ButtonSubmit from "../components/ButtonSubmit.svelte";
 import Layout from "../layouts/Layout.astro";
 import Texarea from "../components/Texarea.svelte";
+import Footer from "../components/Footer.svelte";
+import Powered from "../components/Powered.svelte";
 ---
 
 <Layout title="Cooking Idea ">
@@ -16,8 +18,9 @@ import Texarea from "../components/Texarea.svelte";
       <Texarea client:visible />
       <ButtonSubmit client:visible/>
     </div>
-    <a class="underline underline-offset-1 pt-10" href="https://www.sebastianlagos.cl" target="_blank">Created by Sebastián Lagos</a>
+    <Powered client:visible/>
   </main>
+  <Footer client:visible/>
 </Layout>
 
 <style>
